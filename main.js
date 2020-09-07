@@ -6,6 +6,10 @@ const prefix = '-';
 
 const fs = require('fs');
 
+const cheerio =require('cheerio')
+
+const request = require('request')
+
 client.commands = new Discord.Collection();
 
 
@@ -35,8 +39,13 @@ client.on('message', message => {
     }else if (command === 'curse'){
         message.channel.send('NMSL');
     }else if (command === 'author'){
-        message.channel.send('https://github.com/Hexthol');
+        client.commands.get('author').execute(message,args);
+    }else if (command === 'enslave'){
+        client.commands.get('enslave').execute(message,args);
+    }else if (command === 'image'){
+        client.commands.get('image').execute(message,args);
     }
 });
 
+//NzUxNTg4NTY5NDQ1MDQwMjA4.X1LRZg.HcY8CnA09zox73_TVc5BJr03l6o
 client.login('NzUxNTg4NTY5NDQ1MDQwMjA4.X1LRZg.HcY8CnA09zox73_TVc5BJr03l6o');
