@@ -1,0 +1,22 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "a open source discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hexthol/DiscordBot.git"
+  },
+  "author": "Zichen Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hexthol/DiscordBot/issues"
+  },
+  "homepage": "https://github.com/Hexthol/DiscordBot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
