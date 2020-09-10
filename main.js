@@ -44,6 +44,10 @@ client.on('message', message => {
         client.commands.get('enslave').execute(message,args);
     }else if (command === 'image'){
         client.commands.get('image').execute(message,args);
+    }else if (command === 'porn'){
+        client.commands.get('porn').execute(message,args);
+    }else if(command === 'poll'){
+        client.commands.get('poll').execute(message,args);
     }
 });
 
